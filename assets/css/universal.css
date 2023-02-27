@@ -1,0 +1,68 @@
+
+
+/* -------------------------------------------
+                Reset Classes 
+--------------------------------------------*/
+
+
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "calibiri", "Arial", "Georgia";
+}
+
+body {
+  background-color: #f1f3f6;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+input {
+  border: none;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 2px;
+  margin-inline: 5px;
+  outline: none;
+}
+
+img {
+  height: auto;
+}
+
+
+
+/* -------------------------------------------
+                Utility Classes 
+--------------------------------------------*/
+
+
+
+.btn {
+    cursor: pointer;
+    padding: 8px 10px;
+    font-weight: 400;
+    border-radius: 2px;
+    border: none;
+    white-space: nowrap;
+  }
+  
+  .ft-large {
+    font-weight: 600;
+    font-size: large;
+  }
