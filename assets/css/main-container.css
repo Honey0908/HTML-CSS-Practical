@@ -130,20 +130,22 @@
 }
 
 .left-control{
-    background-color: rgb(153, 153, 153,0.4);
+    background-color: rgba(95, 95, 95, 0.7);
     margin-left: 5px;
     padding: 5px 2px;
     position: absolute;
     top: 50%;
     left: 0;
+    z-index: 1;
 }
 .right-control{
-    background-color: rgb(153, 153, 153,0.4);
+    background-color: rgb(95, 95, 95, 0.7);
     position: absolute;
     margin-right: 5px;
     padding: 5px 2px;
     top: 50%;
     right: 0;
+    z-index: 1;
 }
 
 /* ------------------------------------------- 
