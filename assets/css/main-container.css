@@ -111,6 +111,10 @@
           product list 1 
 -------------------------------------------*/
 
+#product-list-1{
+    position: relative;
+}
+
 .best-deal-and-time {
   display: flex;
   align-items: center;
@@ -125,6 +129,22 @@
   margin-inline: 8px;
 }
 
+.left-control{
+    background-color: rgb(153, 153, 153,0.4);
+    margin-left: 5px;
+    padding: 5px 2px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+.right-control{
+    background-color: rgb(153, 153, 153,0.4);
+    position: absolute;
+    margin-right: 5px;
+    padding: 5px 2px;
+    top: 50%;
+    right: 0;
+}
 
 /* ------------------------------------------- 
         Aside OF best Deals
