@@ -1,0 +1,474 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="index.js" defer></script>
+    <!-- Title and Favicon -->
+
+    <title>FlipKart</title>
+
+    <!-- CSS File -->
+
+    <link rel="stylesheet" href="./assets/css/universal.css">
+    <link rel="stylesheet" href="./assets/css/navbar.css">
+    <link rel="stylesheet" href="./assets/css/categories.css">
+    <link rel="stylesheet" href="./assets/css/main-container.css">
+
+    <!-- google icons link -->
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,500,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,200,0,0" />
+
+</head>
+
+<!-- BODY -->
+
+<body>
+
+    <!-- Navigation bar --->
+
+    <header id="header">
+
+        <nav id="nav-container">
+
+            <div id="navbar-logo-search">
+
+                <div class="nav-logo-block">
+
+                    <a href="#" id="nav-logo-link">
+                        <img src="./assets/images/navbar/flipkart logo.png" alt="FlipKart" id="nav-logo" width="75px">
+                    </a>
+
+                    <div id="nav-explore-plus"> <em>Explore</em> <em style="color: yellow;">Plus</em>
+                        <img src="./assets/images/navbar/Plus icon.png" alt="" width="10px">
+                    </div>
+
+                </div>
+
+                <div class="nav-search-bar">
+
+                    <input type="text" placeholder="Search for fashion, brands & more">
+                    <span class="material-symbols-outlined" id="nav-search-icon">search</span>
+
+                </div>
+
+            </div>
+
+
+            <ul id="nav-items">
+
+                <li>
+                    <a href="#" class="nav-link">
+                        <button class="btn" id="login-btn">Login</button>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link ">
+                        <span class="nav-span-text">More</span>
+                        <span class="material-symbols-outlined nav-icons expand-icon">expand_more</span>
+                           
+                    </a>
+                    <ul class="dropdown-items">
+                        <li class="dropdown-item"><span class="material-symbols-outlined">
+                            favorite
+                            </span><a href="#"> WishList</a></li>
+                        <li class="dropdown-item"><span class="material-symbols-outlined">
+                            list_alt
+                            </span><a href="#">Your Orders</a></li>
+                        <li class="dropdown-item"><span class="material-symbols-outlined">
+                            settings
+                            </span><a href="#">Setting</a></li>
+                        <li class="dropdown-item"><span class="material-symbols-outlined">
+                            info
+                            </span><a href="#">Help Center</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">
+                        <span class="material-symbols-outlined nav-icons">shopping_cart</span>
+                        <span class="nav-span-text">Cart</span>
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+
+
+        <!----Navigation Footer for Mobile View---->
+
+        <div class="nav-footer">
+            <div class="nav-footer-container">
+
+                <a href="#" class="nav-footer-link">
+
+                    <span class="material-symbols-outlined nav-footer-icon">
+                        home
+                    </span>
+                    <span>Home</span>
+
+                </a>
+                <a href="#" class="nav-footer-link">
+
+                    <span class="material-symbols-outlined nav-footer-icon">
+                        category
+                    </span>
+                    <span>Categories</span>
+
+                </a>
+                <a href="#" class="nav-footer-link">
+
+                    <span class="material-symbols-outlined nav-footer-icon">
+                        account_circle
+                    </span>
+                    <span>Account</span>
+
+                </a>
+                <a href="#" class="nav-footer-link">
+
+                    <span class="material-symbols-outlined nav-footer-icon">
+                        notifications
+                    </span>
+                    <span>Notification</span>
+
+                </a>
+                <a href="#" class="nav-footer-link">
+
+                    <span class="material-symbols-outlined nav-footer-icon">
+                        shopping_cart
+                    </span>
+                    <span>Cart</span>
+
+                </a>
+            </div>
+        </div>
+
+    </header>
+
+
+    <!-- navbar completed -->
+
+
+    <!-- categories -->
+
+    <section id="product-categories">
+
+        <div class="categories-container">
+
+            <div id="category-items">
+
+                <div class="category-item"><img class="category-image" src="./assets/images/categories/Top_Offers.png"
+                        alt="Top Offers">
+                    <div class="category-item-name">
+                        Top Offers
+                    </div>
+                </div>
+
+                <div class="category-item"><img class="category-image" src="./assets/images/categories/grocery.png" alt="Grocery">
+                    <div class="category-item-name">
+                        Grocery
+                    </div>
+                </div>
+
+                <div class="category-item"><img class="category-image" src="./assets/images/categories/Mobiles.png" alt="Mobiles">
+                    <div class="category-item-name">
+                        Mobiles
+                    </div>
+                </div>
+
+                <div class="category-item"><img class="category-image" src="./assets/images/categories/fashion.png" alt="fashion">
+                    <div class="category-item-name">
+                        Fashion<span class="material-symbols-outlined nav-icons">expand_more</span>
+                    </div>
+
+                </div>
+
+                <div class="category-item"><img class="category-image" src="./assets/images/categories/electronics.png"
+                        alt="electronics">
+                    <div class="category-item-name">
+                        Electronics<span class="material-symbols-outlined nav-icons">expand_more</span>
+                    </div>
+
+                </div>
+
+                <div class="category-item"><img class="category-image" src="./assets/images/categories/Home.png" alt="Home">
+                    <div class="category-item-name">
+                        Home<span class="material-symbols-outlined nav-icons">expand_more</span>
+                    </div>
+
+                </div>
+
+                <div class="category-item"><img class="category-image" src="./assets/images/categories/appliances.png"
+                        alt="appliances">
+                    <div class="category-item-name">
+                        Appliances
+                    </div>
+                </div>
+
+                <div class="category-item"><img class="category-image" src="./assets/images/categories/travel.png" alt="travel">
+                    <div class="category-item-name">
+                        Travel
+                    </div>
+                </div>
+
+                <div class="category-item"><img class="category-image" src="./assets/images/categories/Beauty__Toys_and_more.png"
+                        alt="Beauty,Toys and more">
+                    <div class="category-item-name">
+                        Beauty, Toys & more<span class="material-symbols-outlined nav-icons">expand_more</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- categories completed -->
+
+
+
+
+    <!-------- Main Container --------->
+
+
+    <section id="main-container">
+
+        <!---------Product List 1 (Today's Deal )--------->
+
+        <div id="product-list-1" class="main-container-grid-item">
+
+            <div id="left-control" class="left-control">
+                <span class="material-symbols-outlined">
+                    chevron_left
+                    </span>
+            </div>
+            <div id="right-control" class="right-control">
+                <span class="material-symbols-outlined">
+                    chevron_right
+                    </span>
+            </div>
+
+            <div class="product-list-header">
+
+                <div class="best-deal-and-time ">
+
+                    <div class="deals-text ft-large">Deals Of the Day</div>
+                    <span class="material-symbols-outlined clock-icon">timer</span>
+                    <span class="time-text">22 :07 :36 Left</span>
+                </div>
+                <button class="main-container-blue-btn btn">VIEW All</button>
+
+            </div>
+
+            <div class="product-list-items">
+
+                <div class="product-list-item">
+
+                    <img src="./assets/images/main-container/watches.jpg" alt="Watches">
+                    <div class="product-list-item-info">
+
+                        <div class="product-list-item-name">Casio, FastTrack, Sonata</div>
+                        <div class="product-list-item-discount">Upto 60%+Extra 10% off</div>
+                        <div class="product-list-item-type">Knock Out the deal</div>
+
+                    </div>
+                </div>
+
+                <div class="product-list-item">
+
+                    <img src="./assets/images/main-container/women-tops.jpg" alt="women-tops">
+                    <div class="product-list-item-info">
+
+                        <div class="product-list-item-name">Women's Tops</div>
+                        <div class="product-list-item-discount">Min. 50% Off</div>
+                        <div class="product-list-item-type">Party, Casual & more</div>
+
+                    </div>
+                </div>
+
+                <div class="product-list-item">
+                    <img src="./assets/images/main-container/headphones.jpg" alt="headphones">
+                    <div class="product-list-item-info">
+
+                        <div class="product-list-item-name">Studio Headphones</div>
+                        <div class="product-list-item-discount">Upto 50% Off</div>
+                        <div class="product-list-item-type">Explore Now!</div>
+
+                    </div>
+                </div>
+
+                <div class="product-list-item">
+                    <img src="./assets/images/main-container/bags.jpg" alt="specs">
+                    <div class="product-list-item-info">
+
+                        <div class="product-list-item-name">Bags, Trolleys, Luggage & more</div>
+                        <div class="product-list-item-discount">50-70%+Extra 10% Off</div>
+                        <div class="product-list-item-type">WildCraft, American Tourister</div>
+
+                    </div>
+                </div>
+
+                <div class="product-list-item">
+                    <img src="./assets/images/main-container/dryer.jpg" alt="dryer">
+                    <div class="product-list-item-info">
+
+                        <div class="product-list-item-name">Hair Dryer</div>
+                        <div class="product-list-item-discount">From &#8377 600</div>
+                        <div class="product-list-item-type">philips, skytone & more</div>
+
+                    </div>
+                </div>
+
+                <div class="product-list-item">
+                    <img src="./assets/images/main-container/printer.jpg" alt="printer">
+                    <div class="product-list-item-info">
+
+                        <div class="product-list-item-name">Printer</div>
+                        <div class="product-list-item-discount">From &#8377 3999</div>
+                        <div class="product-list-item-type">HP</div>
+
+                    </div>
+                </div>
+
+                <div class="product-list-item">
+                    <img src="./assets/images/main-container/phone-case.jpg" alt="phone-case">
+                    <div class="product-list-item-info">
+
+                        <div class="product-list-item-name">Phone Case</div>
+                        <div class="product-list-item-discount">From &#8377 150</div>
+                        <div class="product-list-item-type">For All Top Models</div>
+
+                    </div>
+                </div>
+
+                <div class="product-list-item">
+                    <img src="./assets/images/main-container/jackets.jpg" alt="jackets">
+                    <div class="product-list-item-info">
+
+                        <div class="product-list-item-name">SweatShirts, Hoodies, Jackets...</div>
+                        <div class="product-list-item-discount">Upto 50% Off</div>
+                        <div class="product-list-item-type">WildCraft, Fort Collins & more</div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Product List -1 (Today's deal ) completed -->
+
+
+        <!------Aside ads and offer section----->
+
+        <aside id="special-offer-section" class="main-container-grid-item">
+            <div>
+
+                <h5 class="aside-Text ft-large">Best Of <br> Today's Deal</h5>
+                <button class="main-container-blue-btn btn">VIEW ALL</button>
+            </div>
+        </aside>
+
+
+        <!------Aside Ads and Offer Section Completed------>
+
+
+        <!-- Product-List 2 for Books and Music instruments Items -->
+
+        <div id="product-list-2" class="main-container-grid-item">
+
+            
+
+            <div class="product-list-header">
+
+                <div class="product-list-heading-books-shopNow">
+
+                    <div class="Product-list-2-heading-books-and-more ft-large">Books And Music Instruments</div>
+                    <div class="product-list-2-sub-heading-shopNow">Shop Now!</div>
+
+                </div>
+                <button class="main-container-blue-btn btn">VIEW All</button>
+            </div>
+
+            <div class="product-list-items">
+
+                <div class="product-list-item">
+
+                    <img src="./assets/images/main-container/guitar.jpg" alt="Guitar">
+                    <div class="product-list-item-info">
+
+                        <div class="product-list-item-name">Guitars</div>
+                        <div class="product-list-item-discount">Upto 60% off</div>
+                        <div class="product-list-item-type">Shop Now</div>
+
+                    </div>
+                </div>
+
+                <div class="product-list-item">
+
+                    <img src="./assets/images/main-container/flutes.jpg" alt="book">
+                    <div class="product-list-item-info">
+
+                        <div class="product-list-item-name">Flutes</div>
+                        <div class="product-list-item-discount">Min. 50% Off</div>
+                        <div class="product-list-item-type">Shop Now</div>
+
+                    </div>
+                </div>
+
+                <div class="product-list-item">
+                    <img src="./assets/images/main-container/Educational books.jpg" alt="Educational Book">
+                    <div class="product-list-item-info">
+
+                        <div class="product-list-item-name">Educational Books</div>
+                        <div class="product-list-item-discount">Upto 50% Off</div>
+                        <div class="product-list-item-type">Explore Now!</div>
+
+                    </div>
+                </div>
+
+                <div class="product-list-item">
+                    <img src="./assets/images/main-container/Piano.jpg" alt="Piano">
+                    <div class="product-list-item-info">
+
+                        <div class="product-list-item-name">Piano</div>
+                        <div class="product-list-item-discount">50-70%+Extra 10% Off</div>
+                        <div class="product-list-item-type">Shop Now!</div>
+
+                    </div>
+                </div>
+
+                <div class="product-list-item">
+                    <img src="./assets/images/main-container/Literature-book.jpg" alt="Literature-book">
+                    <div class="product-list-item-info">
+
+                        <div class="product-list-item-name">Literature books</div>
+                        <div class="product-list-item-discount">From &#8377 200</div>
+                        <div class="product-list-item-type">Shop Now</div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <!-------Product List 2 completed-------->
+
+        <!-----Main Container Done-------------->
+
+    </section>
+
+</body>
+</html>
