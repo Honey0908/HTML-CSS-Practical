@@ -24,7 +24,6 @@
 
 #product-list-1,
 #product-list-2 {
-  overflow: hidden;
   display: flex;
   flex-direction: column;
 }
@@ -113,6 +112,7 @@
 
 #product-list-1{
     position: relative;
+    overflow: hidden;
 }
 
 .best-deal-and-time {
@@ -187,6 +187,11 @@
 
 #product-list-2 {
   grid-column: 1 / span 2;
+  overflow: auto;
+}
+
+#product-list-2 .product-list-items {
+  overflow: auto;
 }
 
 .Product-list-2-heading-books-and-more {

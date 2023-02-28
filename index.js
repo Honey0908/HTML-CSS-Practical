@@ -9,21 +9,20 @@ const itemWidth=list.children[0].offsetWidth;
 // show and hide left and right controlls
 function show_hide_buttons(){
     let scrollWidth= list.scrollWidth - list.clientWidth;
-    console.log(scrollWidth);
     left_control.style.display= list.scrollLeft=== 0 ? "none" : "block";
     right_control.style.display= list.scrollLeft === scrollWidth ?"none":"block";
 }
 
-show_hide_buttons()
+show_hide_buttons();
 
 
-// 2 items will be scrolled on right
+// 3 items will be scrolled on right
 left_control.addEventListener("click", ()=>{
     list.scrollTo(list.scrollLeft-itemWidth*3,0)
     show_hide_buttons();
 });
 
-// 2 items will be scrolled on left
+// 3 items will be scrolled on left
 right_control.addEventListener("click", ()=>{
     list.scrollTo(list.scrollLeft+itemWidth*3,0)
     show_hide_buttons();
