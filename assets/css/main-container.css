@@ -1,0 +1,271 @@
+/* ---------------------------------------------------------- 
+                         Main Container
+-----------------------------------------------------------*/
+
+#main-container {
+    display: grid;
+    grid-template-columns: 3.5fr 1fr;
+    grid-template-rows: repeat(2, minmax(200px, 350px));
+    max-width: 1250px;
+    margin: 8px auto;
+  }
+  
+  /* for all grid items */
+  .main-container-grid-item {
+    background-color: white !important;
+    margin: 5px;
+  }
+
+
+
+/* ------------------------------------------------------------------- 
+        Product List -1  & product List 2 common classess
+----------------------------------------------------------------------*/
+
+#product-list-1,
+#product-list-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-list-header {
+  padding: 15px;
+  border-bottom: 1px solid rgb(192, 192, 192);
+  max-height: 70px;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-container-blue-btn {
+  background-color: #2874f0;
+  color: white;
+}
+
+.main-container-blue-btn:hover {
+  background-color: #004dca;
+  color: white;
+}
+
+.product-list-items {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+
+.product-list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px 25px;
+  white-space: nowrap;
+  align-items: center;
+  max-width: 220px;
+}
+
+.product-list-item-name {
+  font-size: small;
+  font-weight: 500;
+}
+.product-list-item-type {
+  color: gray;
+  font-size: smaller;
+}
+
+.product-list-item-discount {
+  color: green;
+  font-size: small;
+}
+
+.product-list-item img {
+  max-width: 100%;
+  max-height: 150px;
+  margin: auto 0;
+  transition: 0.5s;
+}
+
+.product-list-item img:hover {
+  transform: scale(1.08);
+}
+
+.product-list-item-info {
+  text-overflow: ellipsis;
+}
+
+.product-list-item-info > div {
+  margin-top: 10px;
+  text-overflow: ellipsis;
+  text-align: center;
+  overflow: hidden;
+}
+
+
+
+/* ------------------------------------------------------------------------- */
+/* common classes over */
+/* ------------------------------------------------------------------------- */
+
+/* ---------------------------------------
+          product list 1 
+-------------------------------------------*/
+
+#product-list-1{
+    position: relative;
+    overflow: hidden;
+}
+
+.best-deal-and-time {
+  display: flex;
+  align-items: center;
+}
+
+.deals-text {
+  margin-right: 8px;
+}
+
+.clock-icon {
+  color: red;
+  margin-inline: 8px;
+}
+
+.left-control{
+    background-color: rgba(95, 95, 95, 0.7);
+    margin-left: 5px;
+    padding: 5px 2px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+}
+.right-control{
+    background-color: rgb(95, 95, 95, 0.7);
+    position: absolute;
+    margin-right: 5px;
+    padding: 5px 2px;
+    top: 50%;
+    right: 0;
+    z-index: 1;
+}
+
+/* ------------------------------------------- 
+        Aside OF best Deals
+------------------------------------------------*/
+
+
+
+#special-offer-section {
+  background: url("../images/main-container/Aside-deals.jpg") no-repeat bottom;
+}
+#special-offer-section div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 85%;
+  width: 100%;
+}
+
+.aside-Text {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 35px;
+}
+
+.aside-Text + button {
+  font-size: medium;
+  box-shadow: 1px 1px 6px gray;
+  padding: 10px 20px;
+}
+
+
+
+/* -------------------------------------------
+                Product-list-2 
+----------------------------------------------*/
+
+#product-list-2 {
+  grid-column: 1 / span 2;
+  overflow: auto;
+}
+
+#product-list-2 .product-list-items {
+  overflow: auto;
+}
+
+.Product-list-2-heading-books-and-more {
+  margin-bottom: 5px;
+}
+
+.product-list-2-sub-heading-shopNow {
+  font-weight: 100;
+  font-size: 15px;
+  color: grey;
+}
+
+
+
+
+/* -------------------responsive ------------------- */
+
+
+
+
+/* ------------Tablet View------------- */
+
+@media screen and (max-width: 768px) {
+    #special-offer-section {
+      display: none;
+    }
+    #product-list-1 {
+      grid-column: span 2;
+    }
+    #main-container {
+      margin-inline: 5px;
+    }
+  }
+
+
+/* ------------Mobile View-------------- */
+
+@media screen and (max-width: 425px) {
+
+
+    #main-container{
+        margin-bottom: 60px;
+    }
+
+
+    /* For common Classes */
+    .ft-large {
+        font-size: medium;
+      }
+
+
+    /* Product List 1 */
+    .best-deal-and-time {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .clock-icon {
+      display: none !important;
+      margin-inline: 5px;
+      font-size: 10px;
+    }
+    .time-text {
+      color: red;
+      font-size: 14px;
+    }
+    .deals-text {
+      margin-right: 0px;
+    }
+
+
+    /* Product list 2 */
+    .product-list-2-sub-heading-shopNow {
+        display: none;
+      }
+  }
+
+  
