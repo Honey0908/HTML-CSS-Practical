@@ -102,10 +102,10 @@ Purpose
 
 ## Review Feedback Format
 
-- **[REQUIRED]** When providing feedback on defects or violations, always use **bold** and **italic** formatting for the defect title/heading to ensure clear visibility.
+- **[REQUIRED]** When providing feedback on defects or violations, always use **bold** and **CAPITAL** formatting for the defect title/heading to ensure clear visibility.
 
 **Example:**
 ```
-**_Missing alt attribute on image_**
+**_MISSING ALT ATTRIBUTE ON IMAGE_**
 The image on line 42 is missing an alt attribute, which is required for accessibility.
 ```
