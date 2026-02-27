@@ -4,16 +4,15 @@ applyTo: "**/*.js,**/*.jsx,**/*.ts,**/*.tsx"
 
 # *JavaScript Instructions*
 
-*Formatting:* All JavaScript instructions in this file should be written in *italics*.
+## Review Feedback Format
 
-*Reviewer headings:* When Copilot generates review comments or headings for JavaScript files, format those headings in *italics*.
+- **[REQUIRED]** When providing feedback on defects or violations, always use **bold** and **CAPITAL** formatting for the defect title/heading to ensure clear visibility.
 
-*No console:* Do not leave `console` statements in production code; remove `console.log`/debugging output before merging.
-
-Purpose
-- Required rules and checklist for JavaScript/TypeScript code reviews in this repo.
-
----
+**Example:**
+```
+**_MISSING ALT ATTRIBUTE ON IMAGE_**
+The image on line 42 is missing an alt attribute, which is required for accessibility.
+```
 
 ## General Principles
 
@@ -100,12 +99,3 @@ Purpose
 - [ ] Linting passes (ESLint) and formatting applied.
 - [ ] Unit tests added/updated where applicable.
 
-## Review Feedback Format
-
-- **[REQUIRED]** When providing feedback on defects or violations, always use **bold** and **CAPITAL** formatting for the defect title/heading to ensure clear visibility.
-
-**Example:**
-```
-**_MISSING ALT ATTRIBUTE ON IMAGE_**
-The image on line 42 is missing an alt attribute, which is required for accessibility.
-```
